@@ -1,0 +1,145 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.page-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #ffe9c3 0, #f7cfa0 40%, #f6c48d 100%);
+}
+
+/* Card */
+.card {
+  width: 420px;
+  background: #181218;
+  border-radius: 18px;
+  padding: 28px 30px 22px;
+  color: #ffffff;
+  box-shadow: 0 0 0 3px #2058ff;
+}
+
+/* Headings */
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin: 0 0 22px;
+}
+
+.task-list-heading {
+  text-align: center;
+  margin: 18px 0 14px;
+  font-size: 20px;
+}
+
+/* Form */
+.todo-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 15px;
+}
+
+#todo-input:focus {
+  outline: 2px solid #2058ff;
+}
+
+.add-btn {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #2058ff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.add-btn:hover {
+  background: #1742b5;
+}
+
+/* Task list */
+.tasks-wrapper {
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid #f1f1f1;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+}
+
+.todo-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-left input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.todo-title {
+  margin: 0;
+  color: #fdfdfd;
+}
+
+.todo-title.completed {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+/* Buttons on each row */
+.todo-actions button {
+  margin-left: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.todo-actions .delete-btn {
+  color: #f14668;
+}
+
+.todo-actions .edit-btn {
+  color: #ff6688;
+}
+
+/* Footer counters */
+.footer-line {
+  height: 1px;
+  background: #2158ff;
+  margin: 8px 0 6px;
+}
+
+.counters {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
